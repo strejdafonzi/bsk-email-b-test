@@ -76,6 +76,23 @@ body {
   font-family: 'Saira', sans-serif;
 }
 
+p {
+  @apply text-base leading-relaxed;
+  word-break: break-word; /* Ensures long words are broken down appropriately */
+  hyphens: auto; /* Allows hyphenation where appropriate */
+  line-height: 1.6; /* Slightly increased line height for better readability */
+  max-width: 90%; /* Control the width to avoid cramped lines */
+}
+
+
+code {
+  @apply text-blu-l text-shadow-lg font-extrabold; 
+  font-family: 'Courier New', monospace;
+  background-color: rgba(255, 255, 255, 0.1); /* light background to make text stand out */
+  padding: 0.4rem 0.4rem; /* slight padding for better readability */
+  border-radius: 4px; /* optional, adds rounded corners */
+}
+
 @theme { 
   /* Custom monster colours */
   --color-gre-l: oklch(0.78 0.1396 113.79);
