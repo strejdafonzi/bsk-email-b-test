@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom themes */
+@plugin "daisyui/theme" {
+  name: "monsternight";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(27% 0.033 256.848);
+  --color-base-200: oklch(21% 0.034 264.665);
+  --color-base-300: oklch(14% 0.004 49.25);
+  --color-base-content: oklch(98% 0.022 95.277);
+  --color-primary: oklch(0.6779 0.2077 121.29);
+  --color-primary-content: oklch(26% 0.051 172.552);
+  --color-secondary: oklch(58% 0.158 241.966);
+  --color-secondary-content: oklch(98% 0 0);
+  --color-accent: oklch(0.78 0.1396 113.79);
+  --color-accent-content: oklch(26% 0.065 152.934);
+  --color-neutral: oklch(21% 0.034 264.665);
+  --color-neutral-content: oklch(0.62 0.0997 251.84);
+  --color-info: oklch(0.42 0.0842 262.78);
+  --color-info-content: oklch(98% 0 0);
+  --color-success: oklch(45% 0.124 130.933);
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: oklch(51% 0.262 276.966);
+  --color-warning-content: oklch(98% 0 0);
+  --color-error: oklch(64% 0.222 41.116);
+  --color-error-content: oklch(98% 0 0);
+  --radius-selector: 0.5rem;
+  --radius-field: 2rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "monsterday";
+  default: false;
+  color-scheme: "light";
+  --color-base-100: oklch(96% 0.001 286.375);
+  --color-base-200: oklch(92% 0.004 286.32);
+  --color-base-300: oklch(70% 0.015 286.067);
+  --color-base-content: oklch(26% 0.051 172.552);
+  --color-primary: oklch(67.79% 0.208 121.29);
+  --color-primary-content: oklch(26% 0.051 172.552);
+  --color-secondary: oklch(58% 0.158 241.966);
+  --color-secondary-content: oklch(98% 0 0);
+  --color-accent: oklch(78% 0.14 113.79);
+  --color-accent-content: oklch(26% 0.065 152.934);
+  --color-neutral: oklch(0.62 0.0997 251.84);
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(42% 0.084 262.78);
+  --color-info-content: oklch(98% 0 0);
+  --color-success: oklch(45% 0.124 130.933);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(51% 0.262 276.966);
+  --color-warning-content: oklch(98% 0 0);
+  --color-error: oklch(64% 0.222 41.116);
+  --color-error-content: oklch(98% 0 0);
+  --radius-selector: 0.5rem;
+  --radius-field: 2rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+body {
+  font-family: 'Saira', sans-serif;
+}
+
+@theme { 
+  /* Custom monster colours */
+  --color-gre-l: oklch(0.78 0.1396 113.79);
+  --color-gre-m: oklch(0.69 0.1423 123.39);
+  --color-gre-d: oklch(0.58 0.1221 125.74);
+  
+  --color-blu-l: oklch(0.62 0.0997 251.84);
+  --color-blu-m: oklch(0.42 0.0842 262.78);
+  --color-blu-d: oklch(0.3 0.0775 265.15);
+  
+  --color-blu-x: oklch(0.2 0.0614 273.75);
+}
+
+.btn-primary:hover, .btn-accent:hover {
+  @apply text-lime-50 text-shadow-xs text-shadow-gre-d;
+}
+
+.btn-secondary:hover {
+  @apply bg-neutral text-neutral-content text-shadow-xs text-shadow-base-300;
+}
+
+.btn-ghost:hover {
+  @apply text-gre-m text-shadow-xs text-shadow-base-300;
+}
+
+.btn-neutral:hover {
+  @apply bg-secondary text-secondary-content text-shadow-xs text-shadow-blu-m;
+}
+
+.btn-accent{
+ @apply bg-gradient-to-br from-gre-m to-gre-d border-0 text-shadow-xs text-shadow-gre-d;
+}
+
+.turno {
+  top: 50%;
+  left: 50%;
+  
+  /* This is where the scroll animation happens */
+  animation: rotate 1s linear paused;  /* Keep paused until scroll trigger */
+  animation-delay: calc(var(--scroll) * -1s);  /* Use scroll progress for animation delay */
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  transform-origin: center center;
+}
+
+@keyframes rotate-cw {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-ccw {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.spin-cw {
+  animation-name: rotate-cw;
+}
+
+.spin-ccw {
+  animation-name: rotate-ccw;
+}
