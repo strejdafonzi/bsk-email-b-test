@@ -6,7 +6,7 @@
             class="turno select-none mx-auto max-w-60 " 
             :class="Math.random() > 0.5 ? 'spin-cw' : 'spin-ccw'" /> <!-- I couldn't decide whether the mascot should spin clockwise or counterclockwise, so I made it random. -->
 
-            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-pretty-content bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-pretty-content grad">
               Secure Email Proxy for Bluesky
             </h1>
             <h2 class="text-lg sm:text-xl md:text-2xl text-pretty-content max-w-3xl text-center mx-auto p-4 sm:p-6 md:p-8 lg:p-10">

@@ -5,6 +5,8 @@ import NavBar from './components/NavBar.vue';
 import Hero from './components/Hero.vue';
 import StepCard from './components/StepCard.vue';
 import Features from './components/Features.vue';
+import Offer from './components/Offer.vue';
+import Pricing from './components/Pricing.vue';
 
 
 // Available languages
@@ -66,6 +68,8 @@ provide('setLanguage', setLanguage);
   <Hero></Hero> 
   <StepCard></StepCard>
   <Features></Features>
+  <Offer></Offer>
+  <Pricing></Pricing>
   <Test></Test>
 </template>
 

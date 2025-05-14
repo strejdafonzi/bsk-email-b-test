@@ -7,7 +7,7 @@
         <h5 class="text-3xl font-bold text-base-content py-2">
           <slot name="title" />
         </h5>
-        <p class="text-base leading-relaxed">
+        <p>
           <slot name="description" />
         </p>
       </div>

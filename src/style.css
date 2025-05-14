@@ -72,26 +72,6 @@
   --noise: 0;
 }
 
-body {
-  font-family: 'Saira', sans-serif;
-}
-
-p {
-  @apply text-base leading-relaxed;
-  word-break: break-word; /* Ensures long words are broken down appropriately */
-  hyphens: auto; /* Allows hyphenation where appropriate */
-  line-height: 1.6; /* Slightly increased line height for better readability */
-  max-width: 90%; /* Control the width to avoid cramped lines */
-}
-
-
-code {
-  @apply text-blu-l text-shadow-lg font-extrabold; 
-  font-family: 'Courier New', monospace;
-  background-color: rgba(255, 255, 255, 0.1); /* light background to make text stand out */
-  padding: 0.4rem 0.4rem; /* slight padding for better readability */
-  border-radius: 4px; /* optional, adds rounded corners */
-}
 
 @theme { 
   /* Custom monster colours */
@@ -106,7 +86,26 @@ code {
   --color-blu-x: oklch(0.2 0.0614 273.75);
 }
 
-.btn-primary:hover, .btn-accent:hover {
+body {
+  font-family: 'Saira', sans-serif;
+}
+
+p {
+  @apply text-base leading-relaxed break-words max-w-[90%];
+  hyphens: auto;
+}
+
+.grad {
+@apply bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent;
+}
+
+code {
+  @apply text-blu-l text-shadow-lg font-extrabold bg-white/10 px-2 py-1 rounded;
+  font-family: 'Courier New', monospace;
+}
+
+.btn-primary:hover,
+.btn-accent:hover {
   @apply text-lime-50 text-shadow-xs text-shadow-gre-d;
 }
 
@@ -122,17 +121,16 @@ code {
   @apply bg-secondary text-secondary-content text-shadow-xs text-shadow-blu-m;
 }
 
-.btn-accent{
- @apply bg-gradient-to-br from-gre-m to-gre-d border-0 text-shadow-xs text-shadow-gre-d;
+.btn-accent {
+  @apply bg-gradient-to-br from-gre-m to-gre-d border-0 text-shadow-xs text-shadow-gre-d;
 }
 
 .turno {
   top: 50%;
   left: 50%;
-  
-  /* This is where the scroll animation happens */
-  animation: rotate 1s linear paused;  /* Keep paused until scroll trigger */
-  animation-delay: calc(var(--scroll) * -1s);  /* Use scroll progress for animation delay */
+
+  animation: rotate 1s linear paused;
+  animation-delay: calc(var(--scroll) * -1s);
   animation-fill-mode: both;
   animation-iteration-count: 1;
   transform-origin: center center;
