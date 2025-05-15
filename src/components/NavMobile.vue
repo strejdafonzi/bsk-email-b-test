@@ -35,6 +35,7 @@ import LanguageDropdown from './LanguageDropdown.vue';
 const translations = inject('translations');
 const currentLanguage = inject('currentLanguage');
 
+// Create a computed property for the current translation
 const currentTranslation = computed(() => {
   return translations[currentLanguage.value] || translations['en'];
 });

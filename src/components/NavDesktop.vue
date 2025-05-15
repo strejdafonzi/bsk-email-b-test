@@ -15,7 +15,6 @@
     <a href="https://bsky.app/profile/bot.bsk.email" class="btn btn-neutral btn-lg">
       {{ currentTranslation.login }}
     </a>
-
     <ThemeSwitcher />
     <LanguageDropdown />
   </div>
@@ -38,3 +37,4 @@ const currentTranslation = computed(() => {
 //console.log('Translations available:', translations);
 //console.log('Current translation object:', currentTranslation.value);
 </script>
+

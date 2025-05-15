@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full max-h-fit" id="Navigace">
+    <div class="w-full sm:w-full max-h-fit" id="Navigace">
         <nav class="w-full px-6 py-4 shadow-md bg-base-100">
             <div class="flex items-center justify-between w-full">
-                <div class="flex items-center space-x-1 whitespace-nowrap text-2xl sm:text-3xl font-bold tracking-wide pointer-events-none">
-                    <svg id="BskyEnvelope" class="inline-block align-middle h-[1.25em] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+                <div class="flex items-center space-x-1 whitespace-nowrap text-2xl sm:text-3xl font-bold tracking-wide">
+                    <svg id="BskyEnvelope" class="pointer-events-none inline-block align-middle h-[1.25em] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
                         <defs>
                             <linearGradient id="blue-gradient" x1="165.44" y1="29.72" x2="235.08" y2="99.35" gradientUnits="userSpaceOnUse">
                                 <stop offset="0" stop-color="#598ac2" />
@@ -21,8 +21,13 @@
                         <path fill="url(#blue-gradient)" d="M175.41,40.1c10.06,7.55,20.88,22.86,24.85,31.08,3.97-8.22,14.79-23.53,24.85-31.08,7.26-5.45,19.02-9.66,19.02,3.75,0,2.68-1.54,22.51-2.44,25.73-3.13,11.19-14.54,14.05-24.69,12.32,17.74,3.02,22.26,13.02,12.51,23.03-18.51,19-26.61-4.77-28.68-10.86-.38-1.12-.56-1.64-.56-1.19,0-.44-.18.08-.56,1.19-2.07,6.09-10.17,29.85-28.68,10.86-9.75-10-5.23-20.01,12.51-23.03-10.15,1.73-21.56-1.13-24.69-12.32-.9-3.22-2.44-23.05-2.44-25.73,0-13.42,11.76-9.2,19.02-3.75Z"
                         />
                     </svg>
-                    <span>bsk.</span>
-                    <span class="text-primary">email</span>
+                    <span class="pointer-events-none">bsk.</span>
+                    <span class="text-primary pointer-events-none">email</span>
+                  <!-- DEV VERSION  
+                    <a href="https://github.com/strejdafonzi/bsk-email-b-test" target="_blank" rel="noopener noreferrer">
+                    <span class="pl-10 animate-pulse text-purple-300 text-lg">&lt;  Development version 1.2.1  /&gt;</span>
+                    </a>
+                --> 
                 </div>
 
                 <!-- Hamburger -->

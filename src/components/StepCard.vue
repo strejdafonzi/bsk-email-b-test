@@ -6,7 +6,8 @@
   </h2>
 
       <!-- Cards Row -->
-      <div class="max-w-[80rem] flex flex-col md:flex-row md:space-x-10 space-y-6 md:space-y-0">
+      <div class="w-full px-4 sm:px-6 md:px-8">
+        <div class="mx-auto w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-[80rem] flex flex-col lg:flex-row md:space-x-10 space-y-6 md:space-y-0">
           <Card :step="1">
               <template #title>Register on Bluesky</template>
               <template #description>
@@ -30,6 +31,7 @@
               </template>
           </Card>
       </div>
+    </div>
   </section>
 </template>
 

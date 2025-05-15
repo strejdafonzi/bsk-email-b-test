@@ -1,11 +1,11 @@
 <template>
-    <div class="hero bg-base-200 min-h-fit pb-5">
+    <div class="w-full sm:w-full hero bg-base-200 min-h-fit pb-5">
       <div class="hero-content text-center container">
         <div class="max-w-screen pb-[10vh]">
           <img
             src="../assets/post_monster.png"
             alt="logo"
-            class="turno select-none mx-auto max-w-60"
+            class="turno select-none mx-auto max-w-[14rem] sm:max-w-60"
             :class="spinClass"
           />  
           <h1
@@ -26,7 +26,7 @@
           </button>
           <button
             type="button"
-            class="btn btn-xl btn-neutral border-2 border-blu-l hover:-translate-y-2 transform transition duration-300"
+            class="btn btn-xl btn-neutral border-2 my-5 border-blu-l hover:-translate-y-2 transform transition duration-300"
           >
             {{ currentTranslation.visitbluesky }}
           </button>

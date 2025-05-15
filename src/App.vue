@@ -19,7 +19,6 @@ import BackToTop from './components/BackToTop.vue';
   <Offer />
   <Pricing />
   <Footer />
-  <NoPage />
   <BackToTop />
 
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="hero bg-base-100 min-h-[10vh] md:min-h-[80vh] lg:min-h-[60vh] p-[8em]">
+<div   class="hero bg-base-100 min-h-[10vh] md:min-h-[80vh] lg:min-h-[60vh] p-[8em] -ml-20 sm:ml-0">
       <div class="hero-content glass bg-base-300 rounded-selector text-center container relative z-0">
         
         <!-- Monster holding the box -->
@@ -9,18 +9,19 @@
           class="absolute top-[-117px] left-[-21px] w-[280px] pointer-events-none z-10"
         />
   
-        <!-- Speech bubble image -->
-        <div class="absolute top-[-100px] left-[260px] w-[400px] z-20 pointer-events-none">
-          <img
+            <!-- Speech bubble image -->
+        <div class="absolute top-[-100px] left-[260px] w-[400px] z-20 pointer-events-none hidden sm:block">
+        <img
             src="@/assets/bubble.png"
             alt="speech bubble"
             class="w-full"
-          />
-          <div class="absolute top-[35%] left-[5%] w-[95%]">
+        />
+        <div class="absolute top-[35%] left-[5%] w-[95%]">
             <strong class="font-extrabold text-blu-x text-lg font-extraboldmr-[2rem] animate-pulse">GRAB THIS DEAL BEFORE IT VANISHES!</strong>
-          </div>
         </div>
-  
+        </div>
+
+
         <!-- DEPRICATED FLASHING BANNER, REPLACED BY MONSTER
         <div class="w-full max-w-screen-lg sm:min-w-[20rem]">
         <span class="animate-pulse badge badge-xl badge-accent p-4 py-5 m-8 hover:scale-105 transform transition duration-300 pointer-events-none">

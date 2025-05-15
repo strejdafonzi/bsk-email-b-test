@@ -10,7 +10,7 @@
       />
 
       <!-- Speech bubble -->
-      <div class="absolute top-[-130px] left-[250px] w-[500px] z-20 pointer-events-none">
+      <div class="absolute top-[-130px] left-[250px] w-[500px] z-20 pointer-events-none hidden sm:block">
         <img
           src="@/assets/bubble.png"
           alt="speech bubble"
