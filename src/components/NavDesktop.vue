@@ -1,20 +1,40 @@
 <template>
   <div class="hidden sm:flex sm:items-center sm:space-x-4">
-      <a href="#how-it-works" class="btn btn-lg btn-ghost">{{ translations[currentLanguage].howitworks }}</a>
-      <a href="#features" class="btn btn-lg btn-ghost">{{ translations[currentLanguage].features }}</a>
-      <a href="#pricing" class="btn btn-lg btn-ghost">{{ translations[currentLanguage].pricing }}</a>
-      <a href="#Bluesky" class="btn btn-lg btn-ghost">{{ translations[currentLanguage].bluesky }}</a>
-      <a href="https://bsky.app/profile/bot.bsk.email" class="btn btn-neutral btn-lg">{{ translations[currentLanguage].login }}</a>
-      <ThemeSwitcher />
-      <LanguageDropdown />
+    <a href="#how-it-works" class="btn btn-lg btn-ghost">
+      {{ currentTranslation.howitworks }}
+    </a>
+    <a href="#features" class="btn btn-lg btn-ghost">
+      {{ currentTranslation.features }}
+    </a>
+    <a href="#pricing" class="btn btn-lg btn-ghost">
+      {{ currentTranslation.pricing }}
+    </a>
+    <a href="#Bluesky" class="btn btn-lg btn-ghost">
+      {{ currentTranslation.bluesky }}
+    </a>
+    <a href="https://bsky.app/profile/bot.bsk.email" class="btn btn-neutral btn-lg">
+      {{ currentTranslation.login }}
+    </a>
+    <ThemeSwitcher />
+    <LanguageDropdown />
   </div>
 </template>
 
 <script setup>
-  import { inject } from 'vue';
-  import ThemeSwitcher from './ThemeSwitcher.vue';
-  import LanguageDropdown from './LanguageDropdown.vue';
-  
-  const translations = inject('translations');
-  const currentLanguage = inject('currentLanguage');
+import { inject, computed } from 'vue';
+import ThemeSwitcher from './ThemeSwitcher.vue';
+import LanguageDropdown from './LanguageDropdown.vue';
+
+const translations = inject('translations');
+const currentLanguage = inject('currentLanguage');
+
+// Create a computed property for the current translation
+const currentTranslation = computed(() => {
+  return translations[currentLanguage.value] || translations['en'];
+});
+
+// Add this for debugging
+console.log('Current language:', currentLanguage.value);
+console.log('Translations available:', translations);
+console.log('Current translation object:', translations[currentLanguage.value]);
 </script>

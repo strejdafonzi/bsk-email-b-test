@@ -1,11 +1,11 @@
 {
-    "maintitle": "Secure Email Proxy for Bluesky",
+    "maintitle": "ČESKY",
     "subtitle": "Get a secure and anonymous email address connected to your Bluesky handle without revealing your real email.",
     "getstarted": "Get Started",
     "visitbluesky": "Visit our Bluesky",
-    "howitworks": "How it works",
-    "features": "Features",
-    "pricing": "Pricing",
+    "howitworks": "Jak to funguje",
+    "features": "Funkce",
+    "pricing": "Ceny",
     "bluesky": "Bluesky",
-    "login": "Sign in"
+    "login": "Přihlásit se"
 }
