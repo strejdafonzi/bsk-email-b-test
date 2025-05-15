@@ -4,11 +4,11 @@
             <div class="w-full max-w-screen-lg sm:min-w-[20rem]">
                 <span class="animate-pulse badge badge-xl badge-accent p-4 py-5 m-8 hover:scale-105 transform transition duration-300 pointer-events-none">LIMITED TIME OFFER</span>
                 <h1 class="p-5 text-5xl font-bold text-wrap text-base-content">
-        Lifetime Pro Access for 
-        <span class="bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
-          Early Adopters
-        </span>
-      </h1>
+                Lifetime Pro Access for 
+                <span class="bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
+                Early Adopters
+                </span>
+                </h1>
                 <p>
                     Be among the first 100 users to get lifetime Pro access for a one-time payment. Help us build the future of secure Bluesky email.
                 </p>
@@ -21,5 +21,5 @@
                 <button class="btn btn-xl btn-primary hover:-translate-y-2 transform transition duration-300 shadow-md-5 py-5 m-5">Get Lifetime Access</button>
             </div>
         </div>
-        </div>
+    </div>
 </template>

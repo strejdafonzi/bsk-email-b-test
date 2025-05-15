@@ -7,6 +7,7 @@ import StepCard from './components/StepCard.vue';
 import Features from './components/Features.vue';
 import Offer from './components/Offer.vue';
 import Pricing from './components/Pricing.vue';
+import Footer from './components/Footer.vue';
 
 
 // Available languages
@@ -70,7 +71,7 @@ provide('setLanguage', setLanguage);
   <Features></Features>
   <Offer></Offer>
   <Pricing></Pricing>
-  <Test></Test>
+  <Footer> </Footer>
 </template>
 
 <style>
