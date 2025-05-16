@@ -15,6 +15,7 @@
     <a href="https://bsky.app/profile/bot.bsk.email" class="btn btn-neutral btn-lg">
       {{ currentTranslation.login }}
     </a>
+
     <ThemeSwitcher />
     <LanguageDropdown />
   </div>
@@ -28,13 +29,12 @@ import LanguageDropdown from './LanguageDropdown.vue';
 const translations = inject('translations');
 const currentLanguage = inject('currentLanguage');
 
-// Create a computed property for the current translation
 const currentTranslation = computed(() => {
   return translations[currentLanguage.value] || translations['en'];
 });
 
-// Add this for debugging
-console.log('Current language:', currentLanguage.value);
-console.log('Translations available:', translations);
-console.log('Current translation object:', translations[currentLanguage.value]);
+//  Debug logs
+//console.log('Current language:', currentLanguage.value);
+//console.log('Translations available:', translations);
+//console.log('Current translation object:', currentTranslation.value);
 </script>

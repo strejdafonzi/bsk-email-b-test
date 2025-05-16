@@ -36,7 +36,7 @@
 <script>
     export default {
         name: "PriceCard",
-        inheritAttrs: false,   // so we can manually bind $attrs to the root div
+        inheritAttrs: false,
         props: {
           features: {
             type: Array,
