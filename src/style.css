@@ -157,17 +157,3 @@ code {
 .spin-ccw {
   animation-name: rotate-ccw;
 }
-
-/* Container to detect hover */
-#BskyEnvelope-container:hover .butterfly {
-  transform: rotate(25deg) scale(1.8);
-  transition: transform 0.4s ease;
-  transform-origin: center;
-}
-
-/* Initial state transition */
-.butterfly {
-  transition: transform 0.4s ease;
-  transform-origin: center;
-  display: inline-block; /* Ensure transform works */
-}

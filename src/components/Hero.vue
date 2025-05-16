@@ -38,13 +38,10 @@
   <script setup>
   import { inject, computed, ref, onMounted } from 'vue';
   
-  // Inject translation dependencies
   const translations = inject('translations');
-  const currentLanguage = inject('currentLanguage');
-  
+  const currentLanguage = inject('currentLanguage');  
   const DEFAULT_LANG = 'en';
   
-  // Compute current translation, fallback to DEFAULT_LANG
   const currentTranslation = computed(() => {
     return translations[currentLanguage.value] || translations[DEFAULT_LANG];
   });
