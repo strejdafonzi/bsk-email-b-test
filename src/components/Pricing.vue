@@ -1,6 +1,6 @@
 <template>
   <section class="bg-base-200" id="pricing">
-    <div class="max-w-[90rem] pb-15 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[90rem] pb-12 mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-5 pt-5">
         <h2 class="text-4xl sm:text-3xl md:text-4xl font-bold text-center">
           Choose Your Plan
@@ -17,7 +17,6 @@
         <!-- Free Plan -->
         <PriceCard
           :features="['Up to 2 recipients', 'Max 5 emails per recipient', 'Basic notifications']"
-          class="mb-6 hover:z-10"
         >
           <template #title>Free</template>
           <template #description>Basic functionality for casual users.</template>
@@ -34,7 +33,6 @@
             'Bluesky DM notifications',
             'Basic statistics',
           ]"
-          class="mb-15 hover:z-10"
         >
           <template #title>Standard</template>
           <template #description>Perfect for everyday users.</template>
@@ -45,7 +43,7 @@
 
         <!-- Pro Plan -->
         <PriceCard
-        class="glass ring-2 ring-primary border-2 border-primary origin-top scale-y-[1.1] hover:scale-y-[1.1] hover:-translate-y-2 transition-transform duration-300 hover:z-20 sm:mb-0 pb-15 -mt-6"
+        class="glass ring-2 ring-primary border-2 border-primary origin-top hover:scale-y-[1.1] hover:-translate-y-2 transition-transform duration-300 hover:z-20 sm:mb-0 pb-5"
           :features="[
             'All Standard features',
             'Priority support',
