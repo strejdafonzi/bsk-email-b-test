@@ -10,7 +10,6 @@
 
 <style scoped>
 .border-box {
-  /* Add padding or effects if needed */
   border: 2px solid #000;
 }
 </style>

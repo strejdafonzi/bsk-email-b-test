@@ -7,5 +7,33 @@
     "features": "Funktionen",
     "pricing": "Preise",
     "bluesky": "Bluesky",
-    "login": "Anmelden"
-}
+    "login": "Anmelden",
+    "stepsheader": "Wie funktioniert bsk.{email}?",
+    "step1title": "Registriere dich auf Bluesky",
+    "step1desc": "Besuche unseren Bot auf Bluesky und sende eine Direktnachricht mit dem Befehl <code>/register your@email.com</code> um deinen sicheren E-Mail-Alias zu erstellen.",
+    "step2title": "Beginne E-Mails zu erhalten",
+    "step2desc": "Deine neue E-Mail-Adresse wird <code>yourhandle.bsky.social@bsk.email</code> sein. Alle an diese Adresse gesendeten E-Mails werden sicher an deine echte E-Mail weitergeleitet.",
+    "step3title": "Verwalten & Kontrollieren",
+    "step3desc": "Nutze Bluesky DM-Befehle, um deine Einstellungen zu steuern, Absender auf die Whitelist zu setzen und deine Kontoeinstellungen zu verwalten.",
+    "featuredesc": "BSK.EMAIL bietet dir leistungsstarke Funktionen zum Schutz deiner Privatsphäre und zur Verbesserung deines E-Mail-Erlebnisses.",
+    "privacyprotection": "Datenschutz",
+    "privacyprotectiondesc": "Halte deine echte E-Mail-Adresse privat, während du weiterhin wichtige Nachrichten über deinen Bluesky-Handle empfängst.",
+    "easysetup": "Einfache Einrichtung",
+    "easysetupdesc": "Einfacher Registrierungsprozess über Bluesky-Direktnachrichten – keine komplizierten Formulare oder Verifizierungsschritte.",
+    "blueskyintegration": "Bluesky-Integration",
+    "blueskyintegrationdesc": "Nutze Bluesky-DM-Befehle, um deine Einstellungen zu steuern, Absender auf die Whitelist zu setzen und deine Kontoeinstellungen zu verwalten.",
+    "groupemails": "Gruppen-E-Mails",
+    "groupemailsdesc": "Erstelle Starter Packs zur Verwaltung von Gruppennachrichten mit anderen Bluesky-Nutzern (Business-Tarif)",
+    "antispam": "Spam-Schutz",
+    "antispamdesc": "Erweitertes Filtersystem und Whitelist-Kontrolle, um unerwünschte Nachrichten fernzuhalten.",
+    "customdomanins": "Eigene Domains",
+    "customdomaninsdesc": "Verwende deine eigene Domain für ein professionelles E-Mail-Erlebnis (Business-Tarif).",
+    "monstersays": "SCHNAPP'S, BEVOR ES WEG IST!", 
+    "lifetimeproaccess": "Lebenslanger Pro-Zugang für",
+    "earlyadopters": "frühe Nutzer",
+    "offerdesc": "Gehöre zu den ersten 100 Nutzern und erhalte lebenslangen Pro-Zugang für eine einmalige Zahlung. Hilf uns, die Zukunft der sicheren Bluesky-E-Mail zu gestalten.",
+    "offerremain": "Verbleibende Angebote:",
+    "lifetime": "Lebenslangen Zugang erhalten"
+
+  }
+

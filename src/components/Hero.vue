@@ -18,6 +18,13 @@
           >
             {{ currentTranslation.subtitle }}
           </h2>
+
+              
+                    <a href="https://github.com/strejdafonzi/bsk-email-b-test" target="_blank" rel="noopener noreferrer">
+                    <span class="pl-10 animate-pulse text-orange-400 ">&lt;  Dev. version 1.2.3  /&gt;</span>
+                    </a><br>
+       
+
           <button
             type="button"
             class="btn btn-xl btn-primary mx-2 hover:-translate-y-2 transform transition duration-300"
