@@ -41,7 +41,7 @@
 					<span class="animate-pulse stat-value text-4xl sm:text-6xl text-primary font-extrabold">100</span>
 				</div>
 
-				<button class="btn btn-xl btn-primary hover:-translate-y-2 transform transition duration-300 shadow-md-5 py-5 m-5">
+				<button class="btn btn-primary hover:-translate-y-2 transform transition duration-300 shadow-md-5 m-5 py-4 px-6 text-sm sm:text-base md:text-lg lg:text-xl text-center whitespace-normal break-words">
 					{{ currentTranslation.lifetime }}
 				</button>
 			</div>

@@ -1,6 +1,6 @@
 <template>
     <div
-      class="card bg-base-300 shadow-xl transition-transform hover:scale-105 relative hover:z-10 mb-6"
+      class="card bg-base-300 shadow-xl transition-transform hover:scale-105 relative hover:z-10 mb-6 w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
       v-bind="$attrs"
     >
       <slot name="badge" />
@@ -28,8 +28,7 @@
         </ul>
         <div class="card-actions pt-4">
           <button
-            class="btn btn-primary btn-block hover:text-zinc-100 hover:-translate-y-2 transform transition duration-300 shadow-md-5"
-          >
+          class="btn btn-primary btn-block hover:text-zinc-100 hover:-translate-y-2 transform transition duration-300 shadow-md-5 text-sm sm:text-base md:text-lg">
             <slot name="button">Get Started</slot>
           </button>
         </div>
