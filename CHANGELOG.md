@@ -1,6 +1,13 @@
 # CHANGELOG.md
 
 
+#### Version 1.3.4 – 2025-05-21
+
+### 🐛 Fixed
+- Sticky/relative conflict in `Navbar`.
+
+---
+
 #### Version 1.3.3 – 2025-05-21
 
 ### ✨ Added
@@ -58,3 +65,56 @@
 
 ### 🐛 Fixed
 - Many things, hard to keep track
+
+---
+
+◤┏━━━━━━━━━━━━■━━━━━━━━━━━━┓◥
+
+       ━━━━━     ⚠️ SCENE MISSING      ━━━━━               
+
+◣┗━━━━━━━━━━━━■━━━━━━━━━━━━┛◢
+
+
+---
+
+#### Version 1.0.5 – 2025-05-16
+
+### 🛠️ Changed
+- Minor tweaks
+
+---
+
+#### Version 1.0.4 – 2025-05-16
+
+### ✨ Added
+- Footer
+- Prettified code
+- Minor tweaks
+
+---
+
+#### Version 1.0.3 – 2025-05-15
+
+### ✨ Added
+- Special offer and pricing section
+
+---
+
+#### Version 1.0.2 – 2025-05-15
+
+### 🛠️ Changed
+- Merge remote changes into local branch
+
+---
+
+#### Version 1.0.1 – 2025-05-15
+
+### 📝 Docs
+- Update `README.md`
+
+---
+
+#### Version 1.0.0 – 2025-05-15
+
+### 🎉 Initial Release
+- Initial commit

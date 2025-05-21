@@ -1,7 +1,7 @@
 <template>
 	<div
 	  id="Navigace"
-	  class="sticky top-0 w-full z-50 bg-base-100 shadow-md flex items-center justify-between px-6 h-20 relative"
+	  class="sticky top-0 w-full z-50 bg-base-100 shadow-md flex items-center justify-between px-6 h-20"
 	>
 	  <!-- Logo (no scale on scroll) -->
 	  <div
