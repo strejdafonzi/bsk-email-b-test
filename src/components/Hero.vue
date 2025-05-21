@@ -21,7 +21,7 @@
 
               
                     <a href="https://github.com/strejdafonzi/bsk-email-b-test" target="_blank" rel="noopener noreferrer">
-                    <span class="pl-10 animate-pulse text-orange-400 ">&lt;  Dev. version 1.3.2  /&gt;</span>
+                    <span class="pl-10 animate-pulse text-orange-400 ">&lt;  Dev. version 1.3.3  /&gt;</span>
                     </a><br>
        
 
