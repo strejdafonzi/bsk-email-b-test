@@ -1,6 +1,20 @@
 # CHANGELOG.md
 
 
+#### Version 1.4.0 – 2025-05-22
+
+### ✨ Added
+- Routing enabled
+- Styles guide @/styles
+
+### 🛠️ Changed
+- Removed redundant alpine.js integration; fully transitioned to Vue for all functionality.
+
+### 🐛 Fixed
+- CSS touchups
+
+---
+
 #### Version 1.3.4 – 2025-05-21
 
 ### 🐛 Fixed

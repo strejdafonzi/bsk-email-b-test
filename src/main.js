@@ -1,20 +1,34 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+
 import './style.css'
 
-import { currentLanguage, translations, setLanguage, languages } from './lang';
+import { currentLanguage, translations, setLanguage, languages } from './lang'
+import StyleGuide from './components/StyleGuide.vue'
+import Home from './Home.vue'
 
-// Create app instance first
-const app = createApp(App);
+const routes = [
+  { path: '/', name: 'Home', component: Home },
+  { path: '/styles', name: 'Styles', component: StyleGuide },
+]
 
-// Provide injections on the app instance
-app.provide('translations', translations);
-app.provide('currentLanguage', currentLanguage);
-app.provide('setLanguage', setLanguage);
-app.provide('languages', languages); // Provide languages array
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
 
-// Mount app AFTER provide calls
-app.mount('#app');
+const app = createApp(App)
+
+app.use(router)
+
+app.provide('translations', translations)
+app.provide('currentLanguage', currentLanguage)
+app.provide('setLanguage', setLanguage)
+app.provide('languages', languages)
+
+app.mount('#app')
+
 
 
 /** scroll event listener

@@ -18,12 +18,13 @@
           >
             {{ currentTranslation.subtitle }}
           </h2>
-
-              
-                    <a href="https://github.com/strejdafonzi/bsk-email-b-test" target="_blank" rel="noopener noreferrer">
-                    <span class="pl-10 animate-pulse text-orange-400 ">&lt;  Dev. version 1.3.4  /&gt;</span>
-                    </a><br>
-       
+            <a href="https://github.com/strejdafonzi/bsk-email-b-test" target="_blank" rel="noopener noreferrer">
+            <span class="pl-10 animate-pulse text-orange-400">&lt;  Dev. version 1.4.0 - 2025-05-22 /&gt;</span>
+            </a>
+            <a href="/styles" class="ml-2 text-sm text-orange-300" title="Style Guide" aria-label="Style Guide">
+              | 🎨 Style Guide >>
+            </a>
+            <br>
 
           <button
             type="button"
